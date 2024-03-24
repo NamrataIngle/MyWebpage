@@ -9,16 +9,10 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
     }
     nav {
       background-color: #007bff;
-      color: #fff;
       padding: 10px 0;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 999;
     }
     nav ul {
       margin: 0;
@@ -28,45 +22,25 @@
     }
     nav ul li {
       display: inline;
-      margin: 0 10px;
     }
     nav ul li a {
       color: #fff;
       text-decoration: none;
+      padding: 10px 20px;
     }
     nav ul li a:hover {
-      text-decoration: underline;
+      background-color: #0056b3;
+      border-radius: 5px;
     }
     .container {
       text-align: center;
-      margin-top: 100px;
+      margin-top: 50px;
     }
     .blurb {
-      background-color: #fff;
+      background-color: #f5f5f5;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .project {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin: 20px auto;
-      max-width: 600px;
-      padding: 20px;
-    }
-    .project h3 {
-      margin-top: 0;
-    }
-    .project p {
-      margin-bottom: 20px;
-    }
-    .project-link {
-      color: #007bff;
-      text-decoration: none;
-    }
-    .project-link:hover {
-      text-decoration: underline;
     }
     footer {
       background-color: #007bff;
@@ -77,6 +51,21 @@
       bottom: 0;
       width: 100%;
     }
+    footer ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    footer ul li {
+      display: inline;
+    }
+    footer ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer ul li a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -85,14 +74,14 @@
       <li><a href="/">Home</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/resume">Resume</a></li>
-      <li><a href="/blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li> <!-- Updated link to scroll to the contact section -->
     </ul>
   </nav>
   <div class="container">
     <div class="blurb">
       <h1>Hi, I am Namrata!</h1>
       <p>Welcome to my personal website. Here, I showcase my projects and share my experiences.</p>
-      <a href="#contact" class="cta-button">Contact Me</a>
+      <a href="#contact" class="cta-button">Contact Me</a> <!-- Updated href attribute to scroll to the contact section -->
     </div>
 
     <!-- Projects Section -->
@@ -112,8 +101,13 @@
       <!-- Add more projects as needed -->
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact"> <!-- Added id attribute for the contact section -->
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:namrataingle006@gmail.com">namrataingle006@gmail.com</a></p>
+    </section>
   </div>
-  <footer id="contact">
+  <footer>
     <ul>
       <li><a href="mailto:namrataingle006@gmail.com">namrataingle006@gmail.com</a></li>
     </ul>
