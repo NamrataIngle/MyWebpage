@@ -15,6 +15,18 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Change shadow color */
+    position: relative; /* Add relative positioning */
+    overflow: hidden; /* Prevent profile picture overflow */
+}
+
+/* Profile picture */
+.container img {
+    display: block;
+    margin: 0 auto 20px; /* Center profile picture */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make it round */
+    object-fit: cover; /* Ensure the image covers the entire space */
 }
 
 /* Navigation and footer */
@@ -96,20 +108,4 @@ a {
 
 a:hover {
     color: #ff9900; /* Change link color on hover */
-}
-
-.container {
-    position: relative;
-}
-
-.container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #007bff, #ff9900); /* Gradient background */
-    z-index: -1;
-    opacity: 0.5; /* Adjust opacity */
 }
