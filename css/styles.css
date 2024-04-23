@@ -3,17 +3,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #222; /* Change background color to black */
+    color: #fff; /* Change text color to white */
 }
 
 /* Main container */
 .container {
     margin: 60px auto;
     width: 70%;
-    background-color: #fff;
+    background-color: #111; /* Darker background color */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Change shadow color */
 }
 
 /* Navigation and footer */
@@ -42,7 +43,7 @@ a:hover {
 /* Headings */
 h1 {
     font-size: 3em;
-    color: #333; /* Change heading color */
+    color: #fff; /* Change heading color to white */
     margin-bottom: 20px; /* Add spacing below heading */
 }
 
@@ -50,12 +51,11 @@ h1 {
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #555; /* Change paragraph color */
 }
 
 /* Footer */
 footer {
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid #333; /* Darker border color */
     font-size: .8em;
     text-align: center;
     padding-top: 20px;
@@ -71,7 +71,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
     margin-bottom: 20px; /* Increase spacing between posts */
-    border-bottom: 1px solid #ccc; /* Add separator between posts */
+    border-bottom: 1px solid #333; /* Darker separator color */
     padding-bottom: 20px; /* Add padding bottom for spacing */
 }
 
@@ -82,9 +82,9 @@ ul.posts li {
 
 .container:hover {
     transform: translateY(-5px); /* Move container up slightly on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Add shadow effect on hover */
 }
 
 ul.posts li:hover {
-    background-color: #f5f5f5; /* Lighter background color on hover */
+    background-color: #333; /* Darker background color on hover */
 }
