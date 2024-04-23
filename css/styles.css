@@ -109,3 +109,28 @@ a {
 a:hover {
     color: #ff9900; /* Change link color on hover */
 }
+
+/* Additional styles for profile section */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.icons a:hover {
+    color: #ff9900;
+}
